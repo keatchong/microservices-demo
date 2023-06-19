@@ -1,0 +1,3 @@
+com\microservices\demo\kafka\admin\exception\KafkaClientException.class
+com\microservices\demo\kafka\admin\config\KafkaAdminConfig.class
+com\microservices\demo\kafka\admin\config\WebClientConfig.class

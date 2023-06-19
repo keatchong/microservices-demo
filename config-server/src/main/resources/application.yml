@@ -1,0 +1,32 @@
+spring:
+ profiles:
+  #active: native,dev
+  active: dev
+ application:
+  name: configserver
+ cloud:
+  config:
+   server:
+    #native:
+     #search-locations: file:///H:/2023_Tech/2202_03_workspace/microservices-demo/config-server-repository
+     #clone-on-start: true
+    git:
+     uri: https://github.com/keatchong/spring-cloud-config-server-repository
+     username: keatmin@gmail.com
+     password: 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
+     clone-on-start: true
+  fail-fast: true   
+
+server:
+ port: 8888
+  
+logging:
+ level:
+  ROOT: DEBUG
+  org.spring.framework.cloud.config: DEBUG
+  
+  
+security:
+ user:
+  name: spring_cloud_ser
+  password: springCloud_Pwd!  

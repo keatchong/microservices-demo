@@ -1,0 +1,404 @@
+2023-05-26 21:44:13 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests]: TwitterToKafkaServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-05-26 21:44:13 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication for test class com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests
+2023-05-26 21:44:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Starting TwitterToKafkaServiceApplicationTests using Java 19 with PID 27452 (started by keatmin in H:\2023_Tech\2202_03_workspace\microservices-demo\twitter-to-kafka-service)
+2023-05-26 21:44:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-05-26 21:44:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplicationTests - Started TwitterToKafkaServiceApplicationTests in 0.719 seconds (process running for 1.976)
+2023-05-26 21:44:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-05-26 21:44:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2023-05-26 21:44:14 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Helllo !!!
+2023-05-26 21:44:14 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-05-26 21:44:14 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:772)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1388)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:184)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:118)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:56)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:42)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:41)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:769)
+	... 78 common frames omitted
+2023-05-26 21:44:14 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Closing twitter stream!
+2023-05-26 21:44:14 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests@3e47a03]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [MergedContextConfiguration@6c6333cd testClass = com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplicationTests, locations = [], classes = [com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@3688eb5b, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@50de186c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@46b61c56, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@9da1, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1fa1cab1, org.springframework.boot.test.context.SpringBootTestAnnotation@a3070369], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:142)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:220)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:188)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:202)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:181)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:150)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:772)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1388)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:184)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:118)
+	... 67 common frames omitted
+Caused by: java.lang.IllegalStateException: Authentication credentials are missing. See http://twitter4j.org/en/configuration.html for details. See and register at http://apps.twitter.com/
+	at twitter4j.TwitterBaseImpl.ensureAuthorizationEnabled(TwitterBaseImpl.java:219)
+	at twitter4j.TwitterStreamImpl.filter(TwitterStreamImpl.java:325)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.addFilter(TwitterKafkaStreamRunner.java:56)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterKafkaStreamRunner.start(TwitterKafkaStreamRunner.java:42)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:41)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:769)
+	... 78 common frames omitted
+2023-05-26 22:08:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 19 with PID 9584 (H:\2023_Tech\2202_03_workspace\microservices-demo\twitter-to-kafka-service\target\classes started by keatmin in H:\2023_Tech\2202_03_workspace\microservices-demo\twitter-to-kafka-service)
+2023-05-26 22:08:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-05-26 22:08:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.865 seconds (process running for 1.369)
+2023-05-26 22:08:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2023-05-26 22:08:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Kafka, Elasticsearch]
+2023-05-26 22:08:33 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Helllo micorservices!
+2023-05-26 22:08:33 [main] INFO  c.m.d.t.t.k.s.r.i.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Kafka, Elasticsearch]
+2023-05-26 22:08:33 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text congue amet Fusce ultricies amet sed Elasticsearch Maecenas amet amet elit purus
+2023-05-26 22:08:43 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit posuere magna dolor purus pulvinar Lorem Kafka dolor elit elit lectus massa
+2023-05-26 22:08:53 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa ultricies massa consectetuer lectus posuere Java amet dolor sit massa
+2023-05-26 22:09:03 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing posuere elit Microservices consectetuer ipsum
+2023-05-26 22:09:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit Maecenas Lorem posuere sit Microservices malesuada elit pulvinar
+2023-05-26 22:09:23 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text congue sed malesuada malesuada Kafka posuere Maecenas
+2023-05-26 22:09:33 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor consectetuer sit Kafka lectus adipiscing
+2023-05-26 22:09:43 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies malesuada purus Microservices consectetuer pulvinar
+2023-05-26 22:09:53 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed porttitor massa sed sed sit Java Fusce porttitor congue sit sed
+2023-05-26 22:10:03 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero Lorem dolor adipiscing posuere Java libero Maecenas libero
+2023-05-26 22:10:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed libero lectus sed ipsum Java Fusce ultricies massa pulvinar
+2023-05-26 22:10:23 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed amet purus ipsum Java amet purus congue
+2023-05-26 22:10:33 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer adipiscing amet Java Lorem Lorem
+2023-05-26 22:10:43 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa magna porttitor porttitor Elasticsearch purus dolor
+2023-05-26 22:10:53 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa sit posuere magna Microservices sed dolor
+2023-05-26 22:11:03 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa amet purus Lorem posuere Lorem Java lectus dolor libero ultricies lectus
+2023-05-26 22:11:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar pulvinar libero Lorem malesuada Java pulvinar consectetuer malesuada Maecenas
+2023-05-26 22:11:23 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text lectus consectetuer Fusce libero ultricies consectetuer Lorem ultricies Elasticsearch amet elit amet congue congue purus Lorem
+2023-05-26 22:11:33 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit congue Lorem magna ipsum elit Kafka congue libero massa congue
+2023-05-26 22:11:43 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text congue Maecenas dolor ultricies Java posuere consectetuer
+2023-05-26 22:11:53 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas sit pulvinar Elasticsearch consectetuer sit
+2023-05-26 22:12:03 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus sed congue congue congue posuere Kafka consectetuer ultricies porttitor pulvinar
+2023-05-26 22:12:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada lectus Maecenas dolor magna Lorem ipsum Kafka elit sed pulvinar malesuada Fusce posuere
+2023-05-26 22:12:23 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit Fusce sit elit adipiscing adipiscing libero Fusce Microservices Lorem Fusce Fusce malesuada pulvinar lectus
+2023-05-26 22:12:33 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing Fusce ultricies Fusce adipiscing sit Elasticsearch sed magna congue malesuada ipsum
+2023-05-26 22:12:43 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet dolor sed massa Microservices adipiscing consectetuer
+2023-05-26 22:12:53 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar libero amet ipsum elit Fusce congue ultricies Kafka sit amet purus congue Fusce adipiscing elit
+2023-05-26 22:13:03 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed ipsum adipiscing Fusce Lorem libero posuere ultricies Microservices pulvinar lectus libero porttitor congue ipsum purus
+2023-05-26 22:13:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing malesuada posuere massa libero magna Microservices ipsum Maecenas Fusce malesuada consectetuer
+2023-05-26 22:13:23 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies posuere pulvinar dolor Kafka malesuada Lorem posuere
+2023-05-26 22:13:33 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum lectus congue sed pulvinar Elasticsearch Fusce purus pulvinar porttitor
+2023-05-26 22:13:43 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit Lorem adipiscing pulvinar elit porttitor Java sed purus amet sit dolor
+2023-05-26 22:13:53 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum massa porttitor Fusce lectus massa congue elit Microservices ipsum purus consectetuer dolor massa massa consectetuer
+2023-05-26 22:14:03 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porttitor Maecenas sit dolor congue Microservices Lorem magna lectus consectetuer
+2023-05-26 22:14:13 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor consectetuer amet Kafka purus porttitor
+2023-05-26 22:14:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor congue purus sit amet consectetuer posuere ultricies Microservices sed elit magna amet libero purus
+2023-05-26 22:14:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem sed lectus ultricies amet massa posuere ipsum Elasticsearch congue consectetuer purus Fusce libero magna
+2023-05-26 22:14:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing pulvinar dolor ultricies amet Kafka lectus consectetuer consectetuer
+2023-05-26 22:14:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing porttitor porttitor adipiscing dolor dolor Microservices porttitor lectus libero elit
+2023-05-26 22:15:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus magna porttitor consectetuer pulvinar sit lectus Java posuere magna libero lectus malesuada
+2023-05-26 22:15:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada dolor lectus lectus consectetuer Java Fusce Lorem Fusce
+2023-05-26 22:15:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies Lorem congue libero dolor pulvinar Elasticsearch Lorem elit congue consectetuer ultricies
+2023-05-26 22:15:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet magna malesuada sed pulvinar Java magna sit magna Fusce
+2023-05-26 22:15:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere Lorem porttitor Lorem porttitor sit Microservices consectetuer congue amet dolor porttitor
+2023-05-26 22:15:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere Fusce consectetuer Microservices congue purus
+2023-05-26 22:16:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit elit sed Java magna Fusce
+2023-05-26 22:16:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit magna posuere Fusce dolor Kafka consectetuer ultricies ultricies porttitor
+2023-05-26 22:16:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor magna massa amet Fusce massa libero Elasticsearch lectus ipsum congue sit congue
+2023-05-26 22:16:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada dolor malesuada Microservices lectus adipiscing
+2023-05-26 22:16:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna magna purus adipiscing Elasticsearch Maecenas Fusce sit
+2023-05-26 22:16:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet Lorem Maecenas sed sed malesuada Kafka ipsum purus posuere dolor ipsum
+2023-05-26 22:17:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada congue malesuada Fusce massa consectetuer amet Microservices pulvinar purus ipsum consectetuer massa
+2023-05-26 22:17:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porttitor elit magna purus pulvinar Java purus Fusce sed consectetuer
+2023-05-26 22:17:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet posuere Fusce massa malesuada congue sed posuere Microservices amet sed dolor Maecenas Lorem ipsum posuere
+2023-05-26 22:17:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor adipiscing libero ipsum Lorem Kafka purus congue ipsum
+2023-05-26 22:17:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus elit massa posuere dolor Maecenas Fusce Fusce Microservices ultricies adipiscing purus consectetuer Maecenas ultricies
+2023-05-26 22:17:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus massa lectus sit Lorem posuere Fusce Lorem Java libero Fusce sed magna purus posuere
+2023-05-26 22:18:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus magna malesuada posuere lectus Kafka Lorem lectus amet
+2023-05-26 22:18:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing malesuada lectus congue Microservices porttitor libero sit
+2023-05-26 22:18:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum adipiscing sit Microservices magna posuere
+2023-05-26 22:18:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero Fusce massa purus dolor posuere Maecenas Java massa congue libero lectus lectus lectus
+2023-05-26 22:18:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor Fusce pulvinar lectus malesuada congue posuere ipsum Elasticsearch dolor Lorem ultricies sed ipsum amet Lorem
+2023-05-26 22:18:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna posuere dolor sed Elasticsearch purus Maecenas dolor
+2023-05-26 22:19:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit Maecenas congue sit malesuada Elasticsearch Fusce amet malesuada dolor
+2023-05-26 22:19:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer sed massa elit malesuada Maecenas Fusce malesuada Elasticsearch congue ultricies pulvinar lectus Lorem elit ultricies
+2023-05-26 22:19:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar porttitor massa Java Fusce elit
+2023-05-26 22:19:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar magna dolor consectetuer Fusce congue Kafka porttitor adipiscing magna ultricies
+2023-05-26 22:19:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum porttitor amet ipsum sit Fusce Lorem Elasticsearch sed amet libero sed pulvinar
+2023-05-26 22:19:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem porttitor ultricies Microservices porttitor dolor
+2023-05-26 22:20:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna libero sit Elasticsearch Lorem pulvinar
+2023-05-26 22:20:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus sed elit sit massa Maecenas Elasticsearch lectus amet adipiscing ipsum
+2023-05-26 22:20:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere purus ipsum magna dolor Elasticsearch ultricies congue libero
+2023-05-26 22:20:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum lectus malesuada sit ipsum elit lectus Maecenas Java ultricies ultricies malesuada amet purus libero adipiscing
+2023-05-26 22:20:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna Fusce porttitor porttitor Lorem pulvinar pulvinar Microservices porttitor magna Lorem congue ipsum amet
+2023-05-26 22:20:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies Fusce ipsum consectetuer Microservices congue posuere
+2023-05-26 22:21:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada Fusce sit ipsum congue Lorem Elasticsearch libero magna congue Maecenas
+2023-05-26 22:21:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text lectus adipiscing Maecenas magna pulvinar libero Kafka massa posuere adipiscing magna
+2023-05-26 22:21:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus elit Fusce malesuada congue pulvinar Elasticsearch sit adipiscing ultricies porttitor
+2023-05-26 22:21:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies sed massa dolor sed Lorem Microservices consectetuer lectus dolor dolor
+2023-05-26 22:21:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero sit malesuada pulvinar congue Lorem malesuada Elasticsearch ultricies sit massa adipiscing amet
+2023-05-26 22:21:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Fusce ipsum libero posuere Java dolor amet
+2023-05-26 22:22:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed Maecenas adipiscing porttitor adipiscing massa libero Java consectetuer Fusce amet malesuada sit consectetuer
+2023-05-26 22:22:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit magna Fusce Java congue sed
+2023-05-26 22:22:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar libero magna ultricies Lorem dolor pulvinar Maecenas Microservices magna ipsum Fusce Maecenas ipsum ultricies
+2023-05-26 22:22:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit consectetuer dolor Lorem Java sed posuere
+2023-05-26 22:22:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text lectus lectus purus libero purus pulvinar ultricies libero Kafka elit purus dolor lectus elit congue pulvinar
+2023-05-26 22:22:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor sed ipsum sit Fusce consectetuer Microservices elit elit dolor libero
+2023-05-26 22:23:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies Lorem congue massa Fusce magna Kafka dolor adipiscing sed massa sed
+2023-05-26 22:23:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porttitor malesuada lectus lectus porttitor malesuada dolor amet Java ultricies amet sit pulvinar congue Maecenas
+2023-05-26 22:23:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet consectetuer Fusce porttitor Maecenas magna massa Java lectus adipiscing ipsum Maecenas congue
+2023-05-26 22:23:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa porttitor Lorem purus Microservices ultricies sed libero
+2023-05-26 22:23:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing consectetuer pulvinar Kafka consectetuer purus
+2023-05-26 22:23:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor pulvinar libero ipsum posuere Maecenas porttitor Maecenas Elasticsearch ipsum sit dolor sed Maecenas porttitor sed
+2023-05-26 22:24:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere Maecenas massa Microservices porttitor sit
+2023-05-26 22:24:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere dolor sed congue Microservices massa ipsum
+2023-05-26 22:24:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem purus massa Lorem congue Java adipiscing elit elit
+2023-05-26 22:24:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere consectetuer purus ipsum Lorem consectetuer ipsum ultricies Elasticsearch ultricies sit massa consectetuer ultricies libero malesuada
+2023-05-26 22:24:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna Fusce consectetuer amet amet Java sed sit magna pulvinar
+2023-05-26 22:24:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa massa purus purus Kafka sit lectus Fusce
+2023-05-26 22:25:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing Maecenas massa consectetuer magna Maecenas adipiscing congue Microservices consectetuer posuere lectus dolor Maecenas magna
+2023-05-26 22:25:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas Maecenas posuere dolor libero Lorem Kafka purus purus purus adipiscing sit
+2023-05-26 22:25:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna malesuada Lorem malesuada sed lectus posuere Microservices ultricies lectus massa ipsum consectetuer lectus
+2023-05-26 22:25:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer ultricies Lorem consectetuer pulvinar Elasticsearch magna Fusce Lorem pulvinar
+2023-05-26 22:25:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero elit ultricies elit sed elit sed Elasticsearch dolor purus consectetuer porttitor sit
+2023-05-26 22:25:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text lectus porttitor posuere lectus sed dolor ultricies Kafka Maecenas congue lectus amet ipsum
+2023-05-26 22:26:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem Fusce adipiscing massa Maecenas Maecenas Java elit Lorem lectus amet
+2023-05-26 22:26:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas massa malesuada Elasticsearch amet Fusce
+2023-05-26 22:26:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer pulvinar massa sit amet Elasticsearch sit Maecenas Fusce purus
+2023-05-26 22:26:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas consectetuer dolor Microservices massa sit
+2023-05-26 22:26:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus porttitor elit libero libero adipiscing adipiscing Microservices Lorem magna sed magna amet
+2023-05-26 22:26:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero ipsum massa purus porttitor porttitor adipiscing dolor Microservices sed amet Fusce consectetuer Maecenas Lorem congue
+2023-05-26 22:27:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa dolor magna elit Java porttitor congue
+2023-05-26 22:27:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing Fusce Fusce massa dolor Maecenas purus Microservices congue ultricies sit congue consectetuer purus
+2023-05-26 22:27:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem amet pulvinar posuere amet libero dolor Elasticsearch purus posuere elit ultricies magna
+2023-05-26 22:27:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text massa lectus Fusce consectetuer Lorem congue lectus Java posuere dolor Fusce elit amet
+2023-05-26 22:27:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text lectus Maecenas pulvinar posuere malesuada amet Kafka pulvinar elit Fusce sed
+2023-05-26 22:27:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem Maecenas Maecenas massa magna Java adipiscing ultricies amet
+2023-05-26 22:28:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies purus porttitor ipsum posuere Elasticsearch ultricies adipiscing massa
+2023-05-26 22:28:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero sit Fusce congue consectetuer porttitor amet Java porttitor consectetuer Maecenas amet Lorem purus
+2023-05-26 22:28:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada Lorem Fusce sed Elasticsearch libero purus Lorem
+2023-05-26 22:28:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar elit ipsum porttitor posuere Microservices posuere amet sed
+2023-05-26 22:28:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text congue libero consectetuer posuere porttitor libero Kafka pulvinar ultricies pulvinar massa dolor
+2023-05-26 22:28:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar Maecenas porttitor congue adipiscing consectetuer adipiscing Java elit Maecenas Lorem adipiscing ultricies
+2023-05-26 22:29:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit posuere libero massa consectetuer elit ipsum posuere Elasticsearch massa libero massa posuere Maecenas consectetuer
+2023-05-26 22:29:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus elit Maecenas sed ultricies ipsum malesuada libero Java massa Maecenas pulvinar consectetuer Maecenas Maecenas ultricies
+2023-05-26 22:29:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor sed pulvinar Lorem Lorem sed Microservices elit Lorem Lorem congue libero
+2023-05-26 22:29:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero dolor purus Maecenas Fusce adipiscing Elasticsearch consectetuer amet ultricies Maecenas
+2023-05-26 22:29:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada pulvinar malesuada ipsum libero posuere malesuada Fusce Microservices ultricies pulvinar adipiscing Maecenas Lorem adipiscing
+2023-05-26 22:29:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor ipsum consectetuer congue Maecenas sed Fusce Microservices ipsum sed Maecenas consectetuer lectus
+2023-05-26 22:30:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem amet posuere porttitor lectus dolor malesuada Microservices sit malesuada sed dolor dolor porttitor
+2023-05-26 22:30:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porttitor porttitor magna purus posuere Elasticsearch sed Lorem congue
+2023-05-26 22:30:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer consectetuer dolor pulvinar sit Lorem Kafka Maecenas pulvinar purus lectus
+2023-05-26 22:30:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor congue lectus ultricies Java consectetuer porttitor ipsum
+2023-05-26 22:30:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada magna sit massa elit purus ipsum porttitor Java ipsum malesuada massa pulvinar porttitor pulvinar
+2023-05-26 22:30:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero consectetuer malesuada massa Elasticsearch consectetuer ultricies sit
+2023-05-26 22:31:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero porttitor dolor Microservices Fusce congue
+2023-05-26 22:31:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar purus ipsum amet Elasticsearch libero sit
+2023-05-26 22:31:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere sit Maecenas posuere dolor Microservices libero sed adipiscing
+2023-05-26 22:31:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed adipiscing ultricies dolor Java congue amet
+2023-05-26 22:31:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit amet massa massa Kafka dolor libero
+2023-05-26 22:31:54 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit consectetuer massa pulvinar malesuada libero Kafka sed elit elit porttitor
+2023-05-26 22:32:04 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada malesuada sed malesuada malesuada adipiscing sed Microservices elit amet malesuada ultricies lectus
+2023-05-26 22:32:14 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Fusce amet sed elit magna Kafka Maecenas Fusce consectetuer massa
+2023-05-26 22:32:24 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum sit Fusce consectetuer consectetuer Microservices amet adipiscing sed ipsum
+2023-05-26 22:32:34 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit magna amet elit Microservices libero elit
+2023-05-26 22:32:44 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero Maecenas Lorem massa Fusce Kafka sed libero Maecenas
+2023-05-26 22:32:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porttitor Maecenas pulvinar ipsum sit adipiscing dolor purus Microservices Maecenas magna ultricies Fusce sed porttitor lectus
+2023-05-26 22:33:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit Lorem sit massa sit Microservices sed elit libero
+2023-05-26 22:33:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies libero elit porttitor Java ultricies sed sit
+2023-05-26 22:33:25 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer amet sed adipiscing Elasticsearch pulvinar lectus
+2023-05-26 22:33:35 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna posuere malesuada ipsum Fusce purus Elasticsearch sed dolor amet consectetuer
+2023-05-26 22:33:45 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna elit Maecenas libero Java malesuada lectus
+2023-05-26 22:33:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed Lorem sit lectus libero sed lectus posuere Microservices Lorem porttitor ipsum purus purus ipsum ultricies
+2023-05-26 22:34:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porttitor elit amet amet ipsum ipsum Elasticsearch sed massa lectus libero amet
+2023-05-26 22:34:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada malesuada Maecenas ipsum adipiscing Lorem Maecenas Maecenas Kafka porttitor malesuada elit lectus pulvinar elit elit
+2023-05-26 22:34:25 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed magna sed elit Kafka libero dolor dolor
+2023-05-26 22:34:35 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Maecenas amet magna libero congue Maecenas posuere Microservices dolor Fusce libero elit ultricies
+2023-05-26 22:34:45 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porttitor dolor Fusce sit dolor massa congue porttitor Java sit libero adipiscing consectetuer magna libero
+2023-05-26 22:34:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor malesuada magna amet ultricies porttitor Kafka sed dolor porttitor sed
+2023-05-26 22:35:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero Maecenas amet dolor magna amet Elasticsearch massa malesuada magna consectetuer lectus
+2023-05-26 22:35:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Fusce congue Maecenas Lorem Kafka sit sed posuere
+2023-05-26 22:35:25 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porttitor malesuada elit purus consectetuer Microservices sed congue ipsum
+2023-05-26 22:35:35 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor porttitor purus magna amet elit dolor posuere Microservices elit massa sit adipiscing sit sed
+2023-05-26 22:35:45 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit elit adipiscing Kafka Fusce ultricies
+2023-05-26 22:35:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text congue posuere sit elit posuere Java ipsum Maecenas magna massa
+2023-05-26 22:36:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Fusce amet libero sed purus Lorem Elasticsearch consectetuer libero adipiscing Lorem
+2023-05-26 22:36:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum dolor ultricies adipiscing congue Kafka ipsum porttitor ultricies
+2023-05-26 22:36:25 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text porttitor consectetuer massa amet sed Microservices libero libero sit
+2023-05-26 22:36:35 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Fusce lectus Fusce magna ipsum Microservices sit sed sit purus
+2023-05-26 22:36:45 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum consectetuer ultricies congue elit dolor purus Microservices magna sit porttitor Fusce pulvinar
+2023-05-26 22:36:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text lectus libero libero sed ipsum lectus Java consectetuer malesuada dolor Maecenas
+2023-05-26 22:37:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum consectetuer porttitor dolor sit libero Java malesuada ultricies posuere sit purus
+2023-05-26 22:37:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text libero sit elit adipiscing magna pulvinar magna ultricies Elasticsearch porttitor libero congue Maecenas purus Lorem
+2023-05-26 22:37:25 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text lectus elit malesuada ipsum libero dolor libero Java malesuada magna pulvinar Maecenas malesuada
+2023-05-26 22:37:35 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit lectus Lorem posuere adipiscing malesuada Microservices Maecenas malesuada lectus magna adipiscing
+2023-05-26 22:37:45 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sit ipsum sit congue Maecenas lectus amet Microservices dolor sed Maecenas libero posuere
+2023-05-26 22:37:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Fusce sit lectus elit congue purus Microservices massa Fusce adipiscing massa
+2023-05-26 22:38:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text posuere sit massa lectus Kafka sit consectetuer Fusce
+2023-05-26 22:38:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text lectus Lorem porttitor sed Lorem Fusce amet Elasticsearch amet amet ultricies adipiscing consectetuer magna
+2023-05-26 22:38:25 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text dolor massa purus malesuada Lorem Kafka ipsum congue posuere pulvinar
+2023-05-26 22:38:35 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies libero lectus amet dolor Maecenas magna Kafka consectetuer elit magna ultricies lectus sed
+2023-05-26 22:38:45 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text congue elit sit Kafka ipsum sed
+2023-05-26 22:38:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit amet amet dolor Lorem Elasticsearch ultricies malesuada ultricies adipiscing
+2023-05-26 22:39:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna pulvinar elit porttitor Kafka purus ultricies
+2023-05-26 22:39:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text malesuada libero elit posuere ipsum Elasticsearch malesuada massa ultricies libero
+2023-05-26 22:39:25 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text elit sed sed porttitor Microservices amet sit dolor
+2023-05-26 22:39:35 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text Lorem amet pulvinar massa Fusce libero Kafka elit massa lectus ultricies
+2023-05-26 22:39:45 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna consectetuer malesuada massa congue massa sit posuere Elasticsearch posuere porttitor adipiscing posuere Fusce adipiscing posuere
+2023-05-26 22:39:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus lectus ipsum posuere consectetuer Java malesuada elit posuere
+2023-05-26 22:40:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text purus ultricies malesuada massa lectus pulvinar Lorem Kafka congue ultricies dolor dolor Lorem
+2023-05-26 22:40:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet congue massa Lorem elit pulvinar Elasticsearch ultricies libero sed sed sed
+2023-05-26 22:40:25 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed massa Fusce Lorem dolor consectetuer Elasticsearch ipsum ipsum porttitor dolor
+2023-05-26 22:40:35 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ipsum posuere sit pulvinar Lorem posuere Java amet massa porttitor congue pulvinar
+2023-05-26 22:40:45 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text adipiscing dolor pulvinar posuere Kafka libero congue
+2023-05-26 22:40:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed posuere Lorem Maecenas congue libero Kafka elit ipsum elit congue dolor
+2023-05-26 22:41:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text amet sit congue elit libero Java Maecenas libero Maecenas
+2023-05-26 22:41:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer Maecenas elit malesuada ipsum Lorem Kafka amet porttitor porttitor adipiscing ipsum
+2023-05-26 22:41:25 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text sed magna consectetuer dolor congue ipsum amet ipsum Kafka libero purus pulvinar malesuada lectus sed libero
+2023-05-26 22:41:35 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text pulvinar libero pulvinar congue consectetuer congue malesuada Elasticsearch dolor magna ipsum sit massa
+2023-05-26 22:41:45 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text ultricies adipiscing sit congue amet congue malesuada lectus Microservices Maecenas dolor amet ultricies Maecenas sit
+2023-05-26 22:41:55 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna Fusce malesuada consectetuer malesuada Java Lorem adipiscing adipiscing
+2023-05-26 22:42:05 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer ipsum amet Lorem magna porttitor Java ipsum massa ipsum porttitor sit
+2023-05-26 22:42:15 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text consectetuer malesuada Maecenas amet Microservices porttitor massa massa
+2023-05-26 22:42:25 [pool-2-thread-1] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Twitter status with text magna pulvinar adipiscing Maecenas posuere Maecenas magna Maecenas Microservices purus sed adipiscing sed Maecenas consectetuer
