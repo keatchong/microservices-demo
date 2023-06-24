@@ -25,9 +25,8 @@
 		<kafka-avro-serializer-version>5.3.0</kafka-avro-serializer-version>
 		<spring-cloud-config-server-version>4.0.3</spring-cloud-config-server-version>
 		<spring-cloud-starter-config-version>4.0.3</spring-cloud-starter-config-version>
-		
 		<spring-cloud-dependencies.version>2022.0.3</spring-cloud-dependencies.version>
-		
+		<jasypt-version>3.0.5</jasypt-version>
 
 	</properties>
 
@@ -165,6 +164,14 @@
 			</dependency>
 
 
+			<dependency>
+				<groupId>com.github.ulisesbocchio</groupId>
+				<artifactId>jasypt-spring-boot-starter</artifactId>
+				<version>${jasypt-version}</version>
+			</dependency>
+
+
+
 			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-server -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
@@ -235,9 +242,12 @@
 		<module>kafka</module>
 		<module>kafka/kafka-model</module>
 		<module>kafka/kafka-admin</module>
+		<module>kafka/kafka-consumer</module>
 		<module>common-config</module>
 		<module>kafka/kafka-producer</module>
 		<module>config-server</module>
+	
+		
 	</modules>
 
 

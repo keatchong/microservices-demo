@@ -13,20 +13,23 @@ spring:
     git:
      uri: https://github.com/keatchong/spring-cloud-config-server-repository
      username: keatmin@gmail.com
-     password: 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
+     password: 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
      clone-on-start: true
-  fail-fast: true   
-
+   fail-fast: true   
+ security:
+  user:
+   name: spring_cloud_user
+   password: Sam8899
+   
 server:
  port: 8888
   
 logging:
  level:
   ROOT: DEBUG
-  org.spring.framework.cloud.config: DEBUG
-  
-  
-security:
- user:
-  name: spring_cloud_ser
-  password: springCloud_Pwd!  
+  org.springframework.cloud.config: DEBUG
+     
+#encrypt:
+ #key: 'Demo_Pwd!2020'
+
+ 
