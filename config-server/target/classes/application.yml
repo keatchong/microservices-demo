@@ -13,7 +13,7 @@ spring:
     git:
      uri: https://github.com/keatchong/spring-cloud-config-server-repository
      username: keatmin@gmail.com
-     password: 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
+     password: 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
      clone-on-start: true
    fail-fast: true   
  security:
