@@ -1,7 +1,4 @@
 spring:
- profiles:
-  #active: native,dev
-  active: dev
  application:
   name: configserver
  cloud:
@@ -11,25 +8,26 @@ spring:
      #search-locations: file:///H:/2023_Tech/2202_03_workspace/microservices-demo/config-server-repository
      #clone-on-start: true
     git:
-     uri: https://github.com/keatchong/spring-cloud-config-server-repository
-     username: keatmin@gmail.com
-     password: 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
+     uri: https://github.com/agelenler/spring-cloud-config-server-repository
+     default-label: main
+     username: agelenler
+     password: 'xxx'
      clone-on-start: true
    fail-fast: true   
  security:
   user:
    name: spring_cloud_user
-   password: Sam8899
+   password: '{cipher}1f83997bb42ee71476345bdb9756680a86799988ee14cad8fba98ac520ac4a03'
    
 server:
  port: 8888
   
 logging:
  level:
-  ROOT: DEBUG
-  org.springframework.cloud.config: DEBUG
-     
-#encrypt:
- #key: 'Demo_Pwd!2020'
+  ROOT: INFO
+  org.springframework.cloud.config: INFO
+
+encrypt:
+ key: 'Demo_Pwd!2020'
 
  
