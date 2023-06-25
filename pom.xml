@@ -92,6 +92,12 @@
 			</dependency>
 
 			<dependency>
+				<groupId>com.microservices.demo</groupId>
+				<artifactId>kafka-consumer</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
 				<groupId>org.twitter4j</groupId>
 				<artifactId>twitter4j-core</artifactId>
 				<version>${twitter4j-version}</version>
@@ -171,7 +177,6 @@
 			</dependency>
 
 
-
 			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-config-server -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
@@ -246,8 +251,8 @@
 		<module>common-config</module>
 		<module>kafka/kafka-producer</module>
 		<module>config-server</module>
-	
-		
+		<module>kafka-to-elastic-service</module>
+
 	</modules>
 
 

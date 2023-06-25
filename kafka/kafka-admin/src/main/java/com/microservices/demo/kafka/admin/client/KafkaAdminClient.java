@@ -67,6 +67,7 @@ public class KafkaAdminClient {
         checkTopicsCreated();
     }
 
+    
     public void checkTopicsCreated() {
         Collection<TopicListing> topics = getTopics();
         int retryCount = 1;
@@ -85,6 +86,7 @@ public class KafkaAdminClient {
         }
     }
 
+    
     public void checkSchemaRegistry() {
         int retryCount = 1;
         Integer maxRetry = retryConfigData.getMaxAttempts();
@@ -100,7 +102,8 @@ public class KafkaAdminClient {
         }
     }
 
- 
+
+    //rest call
 	private HttpStatus getSchemaRegistryStatus() {
         try {
             return HttpStatus.valueOf(webClient
@@ -138,6 +141,7 @@ public class KafkaAdminClient {
         return topics.stream().anyMatch(topic -> topic.name().equals(topicName));
     }
 
+    //Create the topics programmatically
     private CreateTopicsResult doCreateTopics(RetryContext retryContext) {
         List<String> topicNames = kafkaConfigData.getTopicNamesToCreate();
         LOG.info("Creating {} topics(s), attempt {}", topicNames.size(), retryContext.getRetryCount());
@@ -165,9 +169,9 @@ public class KafkaAdminClient {
                 kafkaConfigData.getTopicNamesToCreate().toArray(), retryContext.getRetryCount());
         
         
-        LOG.info("Before");
+
         Collection<TopicListing> topics = adminClient.listTopics().listings().get();
-        LOG.info("After");
+  
         if (topics != null) {
             topics.forEach(topic -> LOG.debug("Topic with name {}", topic.name()));
         }

@@ -1,4 +1,4 @@
-package com.microservices.demo.kafka.consumer.config;
+    package com.microservices.demo.kafka.consumer.config;
 
 import com.microservices.demo.config.KafkaConfigData;
 import com.microservices.demo.config.KafkaConsumerConfigData;
